@@ -15,4 +15,4 @@ while True:
         print("\n¡Tocaste la tecla ESC! El robot se detuvo.")
         break
 
-print("Fin del juego.")
+print("Fin del juego.")   
