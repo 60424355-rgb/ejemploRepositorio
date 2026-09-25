@@ -16,3 +16,4 @@ class Personaje:
 p1 = Personaje("Aragorn", 100)
 p1.recibir_dano(30)  # El objeto maneja su propia lógica interna
 p1.curar(15)
+print(f"cual es la vida de {p1.nombre}? tiene: {p1.vida}")
