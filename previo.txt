@@ -1,0 +1,10 @@
+https://github.com/mgfranciae/demoH.git
+pip install transformers torch
+-----------------
+pip install huggingface_hub
+huggingface-cli login
+
+Inference API (Serverless): No ejecutas el modelo en tu propia máquina. Haces llamadas HTTP a los servidores de Hugging Face para que procesen la inferencia por ti (ideal si no tienes GPU).
+
+Descarga de modelos con restricción (Gated Models): Usas la librería transformers localmente pero autenticándote con tu token para acceder a modelos como Llama o Gemma.
+
