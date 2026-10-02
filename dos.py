@@ -1,14 +1,14 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# Nombre del modelo en Hugging Face Hub
-MODEL_NAME = "distilbert-base-uncased-finetuned-sst-2-english"
+# Modelo BERT especializado en español
+MODEL_NAME = "pysentimiento/robertuito-sentiment-analysis"
 
 # 1. Cargamos el Tokenizer y el Modelo específicos
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_NAME)
 
-texto = "Hugging Face makes using NLP models extremely easy."
+texto = "no me gusta el color de la caja"
 
 # paso A: TOKENIZACIÓN
 # 'return_tensors="pt"' devuelve tensores de PyTorch
