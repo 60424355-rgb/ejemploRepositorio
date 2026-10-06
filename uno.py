@@ -6,8 +6,10 @@ clasificador = pipeline(
     model="pysentimiento/robertuito-sentiment-analysis"
 )
 
-# 2. Pasamos el texto
-resultado = clasificador("me molesta que llamen tan seguido")
+# 2. Solicitamos el texto al usuario mediante un input
+texto_usuario = input("Ingresa el texto a analizar: ")
+
+# 3. Pasamos el texto ingresado al clasificador
+resultado = clasificador(texto_usuario)
 
 print(resultado)
-# Salida esperada: [{'label': 'POSITIVE', 'score': 0.99...}]
