@@ -1,0 +1,21 @@
+import csv
+
+datos = [
+    ["fecha", "producto", "categoria", "cantidad", "precio", "ciudad"],
+    ["2024-01-05", "Laptop",     "Tecnología", 2,  1200.00, "Lima"],
+    ["2024-01-06", "Mouse",      "Tecnología", 10,   25.50, "Lima"],
+    ["2024-01-07", "Silla",      "Muebles",    4,   150.00, "Bogotá"],
+    ["2024-01-08", "Monitor",    "Tecnología", 3,   300.00, "Lima"],
+    ["2024-01-09", "Escritorio", "Muebles",    2,   450.00, "Bogotá"],
+    ["2024-01-10", "Teclado",    "Tecnología", 8,    45.00, "Santiago"],
+    ["2024-01-11", "Lámpara",    "Hogar",      6,    35.00, "Santiago"],
+    ["2024-01-12", "Laptop",     "Tecnología", 1,  1200.00, "Bogotá"],
+    ["2024-01-13", "Mouse",      "Tecnología", 15,   25.50, "Lima"],
+    ["2024-01-14", "Silla",      "Muebles",    3,   150.00, "Santiago"],
+]
+
+with open("ventas.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerows(datos)
+
+print("Archivo ventas.csv creado ✅")
